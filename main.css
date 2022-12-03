@@ -1,0 +1,40 @@
+html {
+  background-color: #1E1E24;
+  color: #FFF8F0;
+  line-height: 1.6;
+}
+
+body {
+  width: 80%;
+  padding: 0 3rem;
+  margin: 0 auto;
+}
+
+textarea {
+  font-size: 1rem;
+  width: 100%;
+  background-color: #FFF8F0;
+  color: #1E1E24;
+  resize: vertical;
+}
+
+button {
+  background-color: #92140C;
+  color: #FFF8F0;
+  border-radius: 0.25rem;
+  padding: 1rem 2rem;
+  border: none;
+  margin-top: 1rem;
+  font-size: 1.25rem;
+  float: right;
+  cursor: pointer;
+}
+
+.sr-only {
+  position:absolute;
+  left:-10000px;
+  top:auto;
+  width:1px;
+  height:1px;
+  overflow:hidden;
+}
