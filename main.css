@@ -15,6 +15,17 @@ p {
   font-size: 1.25rem;
 }
 
+figure {
+  border: 2px solid #92140c;
+  color: #92140c;
+  background-color: #fdeeec;
+  width: 100%;
+  padding: 1rem;
+  border-radius: 0.25rem;
+  margin: 1.75rem 0 0;
+  box-sizing: border-box;
+}
+
 textarea {
   font-size: 1rem;
   width: 100%;

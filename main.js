@@ -26,14 +26,17 @@ const copyClicked = () => {
 const textChanged = () => {
   const textInput = document.getElementById("text-input");
   const counterElement = document.getElementById("counter");
+  const overLimitElement = document.getElementById("over-limit");
 
   const characterCount = textInput.value.length;
 
   counterElement.innerHTML = characterCount;
   if (characterCount > CHARACTER_LIMIT) {
     counterElement.classList.add("danger");
+    overLimitElement.hidden = false;
   } else {
     counterElement.classList.remove("danger");
+    overLimitElement.hidden = true;
   }
 };
 
