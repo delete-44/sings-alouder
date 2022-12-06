@@ -1,6 +1,6 @@
 html {
-  background-color: #1E1E24;
-  color: #FFF8F0;
+  background-color: #1e1e24;
+  color: #fff8f0;
   line-height: 1.6;
   font-family: sans-serif;
 }
@@ -19,11 +19,20 @@ textarea {
   font-size: 1rem;
   width: 100%;
   height: 50vh;
-  background-color: #FFF8F0;
-  color: #1E1E24;
+  background-color: #fff8f0;
+  color: #1e1e24;
   resize: vertical;
   font-family: sans-serif;
   line-height: 1.6;
+  border: none;
+  border-radius: 0.25rem;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+small {
+  font-size: 1rem;
+  float: right;
 }
 
 .actions {
@@ -43,19 +52,23 @@ button {
 }
 
 button.primary {
-  background-color: #92140C;
-  color: #FFF8F0;
+  background-color: #92140c;
+  color: #fff8f0;
 }
 
 button.secondary {
-  background-color: #B1B1BE;
+  background-color: #b1b1be;
 }
 
 .sr-only {
-  position:absolute;
-  left:-10000px;
-  top:auto;
-  width:1px;
-  height:1px;
-  overflow:hidden;
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.danger {
+  color: red;
 }

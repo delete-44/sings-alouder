@@ -1,23 +1,39 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Sings Alouder</title>
-    <meta name="description" content="A simple website for formatting text appropriate for a Sisco Reads Aloud">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./main.css">
+    <meta
+      name="description"
+      content="A simple website for formatting text appropriate for a Sisco Reads Aloud"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./main.css" />
   </head>
 
   <body>
     <h1>Sings Alouder</h1>
     <p>Welcome to my super lazy site for being super lazy with messages.</p>
-    <p>Copy-paste lyrics from any lyrics website, hit convert, & it should be good to share in chat :)</p>
+    <p>
+      Copy-paste lyrics from any lyrics website, hit convert, & it should be
+      good to share in chat :)
+    </p>
     <label class="sr-only" name="text-input">Enter your message here</label>
-    <textarea id="text-input" name="text-input" rows="30" cols="100" placeholder="Enter your message here..."></textarea>
+    <textarea
+      id="text-input"
+      name="text-input"
+      rows="30"
+      cols="100"
+      placeholder="Enter your message here..."
+      oninput="textChanged()"
+    ></textarea>
+    <small><span id="counter">0</span>/<span id="max">0</span></small>
 
     <section class="actions">
-      <button onclick="copyClicked()" class="secondary">Copy to clipboard</button>
+      <button onclick="copyClicked()" class="secondary">
+        Copy to clipboard
+      </button>
       <button onclick="convertClicked()" class="primary">Convert</button>
     </section>
     <script src="./main.js" async defer></script>
